@@ -10,15 +10,3 @@ void setup()
 
     Serial.println("================================");
     Serial.println("ESP32 TRAFFIC MONITOR READY");
-    Serial.println("WAITING FOR STM32 DATA...");
-    Serial.println("================================");
-}
-
-void loop()
-{
-    while (Serial2.available())
-    {
-        char c = Serial2.read();
-        Serial.print(c);
-    }
-}
